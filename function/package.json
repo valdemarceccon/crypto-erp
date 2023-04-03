@@ -1,0 +1,25 @@
+{
+  "name": "function",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "zip": "bestzip ../lambda_function_payload.zip dist/* node_modules package.json",
+    "package": "npm run build && npm run zip"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.114",
+    "aws-sdk": "^2.1349.0",
+    "axios": "^1.3.4",
+    "typescript": "^5.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "bestzip": "^2.2.1",
+    "ts-node": "^10.9.1"
+  }
+}
